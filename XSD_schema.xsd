@@ -1,0 +1,124 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="licenseRequest">
+        <xs:annotation>
+            <xs:documentation>Заявление на выполнение действий с лицензией</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="issue">
+                    <xs:annotation>
+                        <xs:documentation>Заявление на выдачу лиценции</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="licenceHolder">
+                                <xs:annotation>
+                                    <xs:documentation>Лицензиат</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="licenseeName" type="xs:string">
+                                            <xs:annotation>
+                                                <xs:documentation>Наименование лицензиата</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="licenseeOGRN" type="xs:string">
+                                            <xs:annotation>
+                                                <xs:documentation>ОГРН лицензиата</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="validityPeriod">
+                                <xs:annotation>
+                                    <xs:documentation>Срок действия лиценции</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="startDate" type="xs:date">
+                                            <xs:annotation>
+                                                <xs:documentation>Дата начала действия лицензии</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="expireDate" type="xs:date">
+                                            <xs:annotation>
+                                                <xs:documentation>Дата окончания действия лицензии</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cancel">
+                    <xs:annotation>
+                        <xs:documentation>Заявление на аннулирование лиценции</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="licenseNumber" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>Номер аннулируемой лицензии</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="licenseDate" type="xs:date">
+                                <xs:annotation>
+                                    <xs:documentation>Дата выдачи аннулируемой лиценции</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="cancelReason" type="xs:string" minOccurs="0">
+                                <xs:annotation>
+                                    <xs:documentation>Причины аннулирования лицензии</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="licenseResponse">
+        <xs:annotation>
+            <xs:documentation>Ответ на заявление на выполнение действий с лицензией</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="issueResponse">
+                    <xs:annotation>
+                        <xs:documentation>Ответ на заявление на выдачу лиценции</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="licenseNumber" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>Номер лиценции</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="licenseDate" type="xs:date">
+                                <xs:annotation>
+                                    <xs:documentation>Дата лицензии</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cancelResponse">
+                    <xs:annotation>
+                        <xs:documentation>Ответ на заявление на аннулирование лицензии</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cancelDate" type="xs:date">
+                                <xs:annotation>
+                                    <xs:documentation>Дата аннулирования лицензии</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

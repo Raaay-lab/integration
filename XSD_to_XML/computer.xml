@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<personal_computer>
+    <frame>
+        <!--корпус-->
+        <manufacturer>MSI</manufacturer>
+        <model_name>MAG FORGE M100R</model_name>
+        <height>423</height>
+        <width>200</width>
+        <length>388</length>
+    </frame>
+    <power_unit>
+        <!--блок питания-->
+        <power>500</power>
+        <manufacturer>DEEPCOOL </manufacturer>
+        <payload>Standard</payload>
+    </power_unit>
+    <motherboard>
+        <!--мат плата-->
+        <manufacturer>MSI</manufacturer>
+        <amount_RAM>2</amount_RAM>
+        <socket>LGA17xx</socket>
+        <PCIe>3.0</PCIe>
+    </motherboard>
+    <CPU>
+        <!--процессор-->
+        <manufacturer>Intel</manufacturer>
+        <name>Core i5-12400F BOX</name>
+        <max_frequency>4.4</max_frequency>
+        <cache>
+            <l1>480kb</l1>
+            <l2>7.5mb</l2>
+            <l3>18mb</l3>
+        </cache>
+        <socket>LGA 1700</socket>
+        <TDP>117</TDP>
+    </CPU>
+    <CPU_cooler>
+        <!--куллер для процессора-->
+        <manufacturer>DEEPCOOL</manufacturer>
+        <model>AG300</model>
+        <TDP>150</TDP>
+    </CPU_cooler>
+    <RAM>
+        <!--оперативная память 1-->
+        <manufacturer>ADATA</manufacturer>
+        <frequency>3200</frequency>
+        <volume>8gb</volume>
+    </RAM>
+    <RAM>
+        <!--оперативная память 2-->
+        <manufacturer>ADATA</manufacturer>
+        <frequency>3200</frequency>
+        <volume>8gb</volume>
+    </RAM>
+    <thermal_paste>
+        <!--термопаста-->
+        <model>Arctic Cooling MX-4 (2019)</model>
+        <TDP>8.5</TDP>
+    </thermal_paste>
+    <video_card>
+        <!--видеокарта-->
+        <manufacturer>ASUS</manufacturer>
+        <name>RTX 3060TI</name>
+        <Memory>8gb</Memory>
+        <number_coolers>2</number_coolers>
+        <number_CUDA_cores>1</number_CUDA_cores>
+        <power_pin>6+2</power_pin>
+    </video_card>
+    <HDD>
+        <!--жесткий диск-->
+        <volume>1t</volume>
+        <max_RPM>7200</max_RPM>
+        <manufacturer>segate</manufacturer>
+    </HDD>
+    <SSD>
+        <!--ssd-->
+        <volume>256g</volume>
+        <manufacturer>samsung</manufacturer>
+    </SSD>
+</personal_computer>
