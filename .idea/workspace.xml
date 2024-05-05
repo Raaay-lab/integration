@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd581e38-1445-48d9-b4ea-812b3fcf0827" name="Changes" comment="4/5 заданий">
-      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Raaay-lab"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Raaay-lab/integration.git",
+    "accountId": "64c42143-220a-47d2-8d5b-6a9153e9c4ff"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/XSD_to_XML/computer.xml" root0="SKIP_INSPECTION" />
   </component>
@@ -125,7 +137,7 @@
       <updated>1714729554326</updated>
       <workItem from="1714729555656" duration="14922000" />
       <workItem from="1714836865618" duration="13930000" />
-      <workItem from="1714911596026" duration="476000" />
+      <workItem from="1714911596026" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="4/5 заданий">
       <option name="closed" value="true" />
@@ -143,7 +155,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714911960665</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4/5 заданий">
+      <option name="closed" value="true" />
+      <created>1714912083192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714912083192</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4/5 заданий">
+      <option name="closed" value="true" />
+      <created>1714912172468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714912172468</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
